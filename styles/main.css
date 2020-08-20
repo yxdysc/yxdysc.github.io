@@ -2178,9 +2178,7 @@ p > code {
       background: #f8f9fae5;
     }.bg-img img {
         filter: blur(3px)
-      }.box-shadow-wrapper {
-      box-shadow: none !important;
-    }body {
+      }body {
       cursor: url('/media/curs/default_link.cur'), default;
     }a {
       cursor: url('/media/curs/default_normal.cur'), pointer !important;

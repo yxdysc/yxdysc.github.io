@@ -8,7 +8,7 @@
 <meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="唔...莫文章填充的blog">
 <meta name="theme-color" content="#000">
-<title>关于 | 随 缘</title>
+<title>『AFO-OI题解』洛谷P3502 [POI2010]CHO-Hamsters | 随 缘</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1597892545100">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
@@ -38,7 +38,7 @@
 
 
 
-  <meta name="description" content="关于" />
+  <meta name="description" content="『AFO-OI题解』洛谷P3502 [POI2010]CHO-Hamsters" />
   <meta name="keywords" content="" />
 </head>
 
@@ -279,10 +279,17 @@
     <ul class="markdownIt-TOC">
 <li>
 <ul>
-<li><a href="#%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99">关于本站</a></li>
-<li><a href="#%E5%8D%9A%E4%B8%BB%E6%98%AF%E8%B0%81">博主是谁</a></li>
-<li><a href="#%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD">兴趣爱好</a></li>
-<li><a href="#%E8%81%94%E7%B3%BB%E6%88%91%E5%91%80">联系我呀</a></li>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E5%A5%BD%E4%BA%86%E8%BF%9B%E5%85%A5%E6%AD%A3%E9%A2%98%E5%BA%9F%E8%AF%9D"><strong>好了，进入正题</strong><s>（废话）</s></a></li>
+</ul>
+</li>
+<li><a href="#%E8%AF%9D%E4%B8%8D%E5%A4%9A%E8%AF%B4%E8%AE%B2%E5%81%9A-_"><s>话不多说讲做* _ *</s></a></li>
+</ul>
+</li>
+<li><a href="#%E9%A6%96%E5%85%88">首先</a></li>
 </ul>
 </li>
 </ul>
@@ -550,8 +557,8 @@
           <div class="section bg-color post post-page">
             <section class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://yxdysc.github.io/post/about/">
-      关于
+    <a class="post-title-link" href="https://yxdysc.github.io/post/ti-jie-luo-gu-p3502-poi2010cho-hamsters/">
+      『AFO-OI题解』洛谷P3502 [POI2010]CHO-Hamsters
     </a>
   </h1>
   <div class="post-meta">
@@ -559,23 +566,23 @@
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span class="language" data-lan="publish">发布于</span>
-      <span class="publish-time" data-t="2019-01-25 19:09:48">2019-01-25</span>
+      <span class="publish-time" data-t="2020-08-20 10:59:55">2020-08-20</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>1<span class="language" data-lan="minute">分钟</span></span>
+      <span>6<span class="language" data-lan="minute">分钟</span></span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>131<span class="pc-show language" data-lan="words">字数</span></span>
+      <span>1095<span class="pc-show language" data-lan="words">字数</span></span>
     </span>
     
     
     
-    <span id="/post/about/" data-flag-title="关于" class="meta-item pc-show leancloud_visitors">
+    <span id="/post/ti-jie-luo-gu-p3502-poi2010cho-hamsters/" data-flag-title="『AFO-OI题解』洛谷P3502 [POI2010]CHO-Hamsters" class="meta-item pc-show leancloud_visitors">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-eye"></i>
       <span><span class="language" data-lan="view">浏览量</span>：<span class="leancloud-visitors-count"></span></span>
@@ -584,24 +591,136 @@
   </div>
 </section>
             <div class="post-body next-md-body" id="post_body">
-              <blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你~🤞</p>
+              <p><a href="https://www.luogu.org/problemnew/show/P3502">首先登出原题位置</a></p>
+<hr>
+<h4 id="好了进入正题废话"><strong>好了，进入正题</strong><s>（废话）</s></h4>
+<p>本来这题是***联赛模拟***的一道T3，<s>然而在联赛前一天被我找到了原题23333...</s></p>
+<h3 id="话不多说讲做-_"><s>话不多说讲做* _ *</s></h3>
+<h2 id="首先">首先</h2>
+<p>互不包含是一个很重要的前提，这说明n个字符串在答案串S中的m次出现一定会依次出现（指的是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span></span></span></span>次出现的首位置一定会不同，但m次出现可能会存在重叠）</p>
+<p>那么我们预先处理出来每个串接在另一个串的后面所需要新添加的字符数量，记为dis[i][j]。这里涉及的的字符串匹配，官方正解给出的是<code>AC自动机</code>。<s>然而我这个小蒟蒻不会呀</s>，所以就用的是KMP算法，时间复杂度是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mo>∑</mo><mo>∑</mo><mo>(</mo><mi>l</mi><mi>e</mi><mi>n</mi><mo>(</mo><mi>i</mi><mo>)</mo><mo>+</mo><mi>l</mi><mi>e</mi><mi>n</mi><mo>(</mo><mi>j</mi><mo>)</mo><mo>)</mo><mo>)</mo><mi>O</mi><mo>(</mo><mo>∑</mo><mo>∑</mo><mo>(</mo><mi>l</mi><mi>e</mi><mi>n</mi><mo>(</mo><mi>i</mi><mo>)</mo><mo>+</mo><mi>l</mi><mi>e</mi><mi>n</mi><mo>(</mo><mi>j</mi><mo>)</mo><mo>)</mo><mo>)</mo></mrow><annotation encoding="application/x-tex">O(\sum\sum(len(i)+len(j)))O(∑∑(len(i)+len(j)))</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.00001em;vertical-align:-0.25001em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">∑</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">∑</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">e</span><span class="mord mathdefault">n</span><span class="mopen">(</span><span class="mord mathdefault">i</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.00001em;vertical-align:-0.25001em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">e</span><span class="mord mathdefault">n</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span><span class="mclose">)</span><span class="mclose">)</span><span class="mclose">)</span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">∑</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">∑</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">e</span><span class="mord mathdefault">n</span><span class="mopen">(</span><span class="mord mathdefault">i</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">e</span><span class="mord mathdefault">n</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span><span class="mclose">)</span><span class="mclose">)</span><span class="mclose">)</span></span></span></span>，把式子化一下会发现复杂度就是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mi>O</mi><mo>(</mo><mi>n</mi><mi mathvariant="normal">总</mi><mi mathvariant="normal">串</mi><mi mathvariant="normal">长</mi><mo>)</mo><mo>)</mo></mrow><annotation encoding="application/x-tex">O(nO(n总串长))</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mord cjk_fallback">总</span><span class="mord cjk_fallback">串</span><span class="mord cjk_fallback">长</span><span class="mclose">)</span><span class="mclose">)</span></span></span></span>，所以还是能过的。</p>
+<p>如果有了dis[i][j]，那么应该不难想到一个<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mi>n</mi><mn>2</mn></msup><mi>m</mi><mo>)</mo><mi>O</mi><mo>(</mo><mi>n</mi><mn>2</mn><mi>m</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n^2m)O(n2m)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mord mathdefault">m</span><span class="mclose">)</span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mord">2</span><span class="mord mathdefault">m</span><span class="mclose">)</span></span></span></span>的DP式。我们设dp[t][i]表示总串中已经出现了t个字符串，且最后一个出现的串是i号串的最小代价，代码如下：</p>
+<pre><code class="language-cpp">for (int i=1;i&lt;=n;i++)
+        dp[1][i]=len[i];
+for (int t=2;t&lt;=m;t++)
+    for (int i=1;i&lt;=n;i++)
+        for (int j=1;j&lt;=n;j++)
+            dp[t][i]=min(dp[t][i],dp[t-1][j]+dis[j][i]);
+</code></pre>
+<p>最终的答案就是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>i</mi><mi>n</mi><mrow><mi>d</mi><mi>p</mi><mo>[</mo><mi>m</mi><mo>]</mo><mo>[</mo><mi>i</mi><mo>]</mo></mrow></mrow><annotation encoding="application/x-tex">min{dp[m][i]}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">i</span><span class="mord mathdefault">n</span><span class="mord"><span class="mord mathdefault">d</span><span class="mord mathdefault">p</span><span class="mopen">[</span><span class="mord mathdefault">m</span><span class="mclose">]</span><span class="mopen">[</span><span class="mord mathdefault">i</span><span class="mclose">]</span></span></span></span></span>。</p>
+<p>然而我们发现<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span></span></span></span>很大，怎么办呢/ -  ^  - /</p>
+<p>上面的那个式子是不是有点眼熟？有点像<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>F</mi><mi>l</mi><mi>o</mi><mi>y</mi><mi>e</mi><mi>d</mi><mi>F</mi><mi>l</mi><mi>o</mi><mi>y</mi><mi>e</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">FloyedFloyed</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mord mathdefault">e</span><span class="mord mathdefault">d</span><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mord mathdefault">e</span><span class="mord mathdefault">d</span></span></span></span>？</p>
+<p>我们可以这样转化一下模型：把每个字符视为一个点，一次转移相当于从一个点走到另一个点，最终的答案就是问你总共走m次的最小距离。边界情况：第一个串的代价总是等于串长，所以我们新建一个0号点，另<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>d</mi><mi>i</mi><mi>s</mi><mo>[</mo><mn>0</mn><mo>]</mo><mo>[</mo><mi>i</mi><mo>]</mo><mo>=</mo><mi>l</mi><mi>e</mi><mi>n</mi><mo>[</mo><mi>i</mi><mo>]</mo><mi mathvariant="normal">，</mi><mi>d</mi><mi>i</mi><mi>s</mi><mo>[</mo><mi>i</mi><mo>]</mo><mo>[</mo><mn>0</mn><mo>]</mo><mo>=</mo><mi>d</mi><mi>i</mi><mi>s</mi><mo>[</mo><mn>0</mn><mo>]</mo><mo>[</mo><mn>0</mn><mo>]</mo><mo>=</mo><mi>I</mi><mi>N</mi><mi>F</mi></mrow><annotation encoding="application/x-tex">dis[0][i]=len[i]，dis[i][0]=dis[0][0]=INF</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">d</span><span class="mord mathdefault">i</span><span class="mord mathdefault">s</span><span class="mopen">[</span><span class="mord">0</span><span class="mclose">]</span><span class="mopen">[</span><span class="mord mathdefault">i</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">e</span><span class="mord mathdefault">n</span><span class="mopen">[</span><span class="mord mathdefault">i</span><span class="mclose">]</span><span class="mord cjk_fallback">，</span><span class="mord mathdefault">d</span><span class="mord mathdefault">i</span><span class="mord mathdefault">s</span><span class="mopen">[</span><span class="mord mathdefault">i</span><span class="mclose">]</span><span class="mopen">[</span><span class="mord">0</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">d</span><span class="mord mathdefault">i</span><span class="mord mathdefault">s</span><span class="mopen">[</span><span class="mord">0</span><span class="mclose">]</span><span class="mopen">[</span><span class="mord">0</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">I</span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mord mathdefault" style="margin-right:0.13889em;">F</span></span></span></span>，那么在经过<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span></span></span></span>次转移之后，最终答案就是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>i</mi><mi>n</mi><mrow><mi>A</mi><mi>n</mi><mi>s</mi><mo>[</mo><mn>0</mn><mo>]</mo><mo>[</mo><mi>i</mi><mo>]</mo></mrow></mrow><annotation encoding="application/x-tex">min{Ans[0][i]}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">i</span><span class="mord mathdefault">n</span><span class="mord"><span class="mord mathdefault">A</span><span class="mord mathdefault">n</span><span class="mord mathdefault">s</span><span class="mopen">[</span><span class="mord">0</span><span class="mclose">]</span><span class="mopen">[</span><span class="mord mathdefault">i</span><span class="mclose">]</span></span></span></span></span>。</p>
+<p>这样，每一次转移就相当于跑一次<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mi>n</mi><mn>3</mn></msup><mo>)</mo><mi>O</mi><mo>(</mo><mi>n</mi><mn>3</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n^3)O(n 3)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span><span class="mclose">)</span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mord">3</span><span class="mclose">)</span></span></span></span>的<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>F</mi><mi>l</mi><mi>o</mi><mi>y</mi><mi>e</mi><mi>d</mi><mi>F</mi><mi>l</mi><mi>o</mi><mi>y</mi><mi>e</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">FloyedFloyed</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mord mathdefault">e</span><span class="mord mathdefault">d</span><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mord mathdefault">e</span><span class="mord mathdefault">d</span></span></span></span>，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span></span></span></span>怎么办？<strong>矩阵加速优化！</strong></p>
+<p>至此这题<s>应该</s>就讲完了，具体代码实现应该还是不难的<sup>-</sup></p>
+<pre><code class="language-cpp">#include&lt;cstdio&gt;
+#include&lt;cstring&gt;
+#include&lt;algorithm&gt;
+using namespace std;
+#define ll long long
+const int _ = 205;
+const ll INF = 1e18;
+char s[_][100005];
+int n,m,len[_],next[_][100005];
+ll ans=INF;
+struct matrix
+{
+    ll f[205][205];
+    matrix operator * (matrix &amp;b)
+        {
+            matrix c;
+            memset(c.f,63,sizeof(c.f));
+            for (int i=0;i&lt;=n;i++)
+                for (int j=0;j&lt;=n;j++)
+                    for (int k=0;k&lt;=n;k++)
+                        c.f[i][k]=min(c.f[i][k],f[i][j]+b.f[j][k]);//一遍Floyed,和矩阵乘法类似但有不同
+            return c;
+        }
+}Tra,Ans;//状态矩阵Ans,转移矩阵Tra
+int main()
+{
+    //freopen(&quot;hamsters.in&quot;,&quot;r&quot;,stdin);
+    //freopen(&quot;hamsters.out&quot;,&quot;w&quot;,stdout);
+    scanf(&quot;%d %d\n&quot;,&amp;n,&amp;m);
+    for (int i=1;i&lt;=n;i++)
+        scanf(&quot;%s&quot;,s[i]+1),len[i]=strlen(s[i]+1);
+    for (int t=1;t&lt;=n;t++)
+    {
+        int j=0;
+        for (int i=2;i&lt;=len[t];i++)
+        {
+            while (j&amp;&amp;s[t][j+1]!=s[t][i]) j=next[t][j];//预处理next数组
+            if (s[t][j+1]==s[t][i]) j++;
+            next[t][i]=j;
+        }
+    }
+    Tra.f[0][0]=INF;//边界情况
+    for (int x=1;x&lt;=n;x++)
+    {
+        Tra.f[0][x]=len[x];Tra.f[x][0]=INF;//边界情况
+        for (int y=1;y&lt;=n;y++)
+        {
+            int j=0;
+            for (int i=2;i&lt;=len[x];i++)
+            {
+                while (j&amp;&amp;s[y][j+1]!=s[x][i]) j=next[y][j];
+                if (s[y][j+1]==s[x][i]) j++;
+                if (i==len[x]) Tra.f[x][y]=len[y]-j;
+            }
+        }
+    }
+    for (int i=0;i&lt;=n;i++)
+        for (int j=0;j&lt;=n;j++)
+            Ans.f[i][j]=Tra.f[i][j];
+    for (m--;m;m&gt;&gt;=1)//Ans的初始状态就已经有一次转移了，所以m--
+    {
+        if (m&amp;1) Ans=Ans*Tra;
+        Tra=Tra*Tra;
+    }
+    for (int i=1;i&lt;=n;i++)
+        ans=min(ans,Ans.f[0][i]);
+    return printf(&quot;%lld\n&quot;,ans),0
+}
+//完结撒花！！！
+</code></pre>
+<blockquote>
+<p>洛谷千万人，守信第一人，复制原代码，提交两行泪！<s>（有防抄袭</s></p>
 </blockquote>
-<h2 id="关于本站">关于本站</h2>
-<pre><code>  本站建立于2020年8月19日，学生党因为穷挂在GitHub上的个人博客，博主喜欢咕咕咕（因为没东西写且时间紧俏
-</code></pre>
-<h2 id="博主是谁">博主是谁</h2>
-<pre><code>  正一天师道弟子，法名山辰，可以喊我H_Daniel，坐标定位南京~
-</code></pre>
-<h2 id="兴趣爱好">兴趣爱好</h2>
-<pre><code> 兴趣爱好广泛~退役OIer，对了有女朋友的我特喜欢撒狗粮😼
-</code></pre>
-<h2 id="联系我呀">联系我呀</h2>
-<pre><code> 联系方式见左侧下方资料框鸭~
-</code></pre>
 
             </div>
             
+            
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong class="language" data-lan="author">本文作者：</strong>
+      山辰
+    </li>
+    <li class="post-copyright-link">
+      <strong class="language" data-lan="link">本文链接：</strong>
+      <a href="https://yxdysc.github.io/post/ti-jie-luo-gu-p3502-poi2010cho-hamsters/" title="『AFO-OI题解』洛谷P3502 [POI2010]CHO-Hamsters">https://yxdysc.github.io/post/ti-jie-luo-gu-p3502-poi2010cho-hamsters/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong class="language" data-lan="copyright">版权声明： </strong>
+      本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i> BY-NC-SA</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" title="『AFO-OI题解』 洛谷P4189 [CTSC2010]星际旅行" href="https://yxdysc.github.io/post/oi-luo-gu-p4189-xing-ji-lu-xing/">『AFO-OI题解』 洛谷P4189 [CTSC2010]星际旅行</a>
+        <a class="nav-mobile-next" title="『AFO-OI题解』 洛谷P4189 [CTSC2010]星际旅行" href="https://yxdysc.github.io/post/oi-luo-gu-p4189-xing-ji-lu-xing/">下一篇</a>
+        <i class="fa fa-chevron-right"></i>
+      
+    </div>
+  </div>
+</div>
             
             
   

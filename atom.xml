@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yxdysc.github.io</id>
     <title>随 缘</title>
-    <updated>2020-08-20T04:15:30.063Z</updated>
+    <updated>2020-08-20T06:17:29.838Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yxdysc.github.io"/>
     <link rel="self" href="https://yxdysc.github.io/atom.xml"/>
@@ -10,6 +10,20 @@
     <logo>https://yxdysc.github.io/images/avatar.png</logo>
     <icon>https://yxdysc.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 随 缘</rights>
+    <entry>
+        <title type="html"><![CDATA[『读书日记』《大地上的事情》-苇岸/咕咕现场]]></title>
+        <id>https://yxdysc.github.io/post/du-shu-ri-ji-da-di-shang-de-shi-qing/</id>
+        <link href="https://yxdysc.github.io/post/du-shu-ri-ji-da-di-shang-de-shi-qing/">
+        </link>
+        <updated>2020-08-20T06:09:06.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[『读书日记』《大地上的事情》-苇岸/咕咕现场]]></title>
+        <id>https://yxdysc.github.io/post/du-shu-ri-ji-lesslessda-di-shang-de-shi-qing-greatergreater-wei-an-gu-gu-xian-chang/</id>
+        <link href="https://yxdysc.github.io/post/du-shu-ri-ji-lesslessda-di-shang-de-shi-qing-greatergreater-wei-an-gu-gu-xian-chang/">
+        </link>
+        <updated>2020-08-20T06:09:06.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[『AFO-OI题解』洛谷P3502 [POI2010]CHO-Hamsters]]></title>
         <id>https://yxdysc.github.io/post/ti-jie-luo-gu-p3502-poi2010cho-hamsters/</id>

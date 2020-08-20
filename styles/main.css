@@ -2074,7 +2074,7 @@ p > code {
       border-bottom-color: #555;
     }
     .archive-timeline-box::after, .tag-timeline-wrapper::after {
-      background: #be4bdbf2;
+      background: #be4bdbe5;
     }h1, h2, h3, h4, h5, h6 {
       color: #862e9c;
     }
@@ -2120,11 +2120,11 @@ p > code {
       }.nav-item a:hover {
         color: #222;
       }.nav-item-active {
-      background: #f9f9f9f2;
+      background: #f9f9f9e5;
     }
 
     .nav-item:hover {
-      background: #f9f9f9f2;
+      background: #f9f9f9e5;
       color: rgba(0, 0, 0, 0.98);
     }.site-author-image {
       border-radius: 50%;
@@ -2160,13 +2160,7 @@ p > code {
       color: #fc6423;
       border-bottom-color: #fc6423;
     }.bg-color {
-      background-color: #f8f0fcf2;
-    }
-    .gemini .blog-header, .gemini .sidebar-wrapper, .gemini .article-wrapper, .gemini .post, .gemini .page, .gemini .section, .gemini .section-box, .gemini .sidebar-box, .gemini .friends-section {
-      border-radius: 15px;
-    }
-    .pisces .blog-header, .pisces .sidebar-wrapper, .pisces .article-wrapper, .pisces .section, .pisces .sidebar-box, .pisces .friends-section {
-      border-radius: 15px;
+      background-color: #f8f0fce5;
     }
     .site-meta {
       background: #000 !important;
@@ -2175,15 +2169,15 @@ p > code {
       background: #000;
     }
     .brand {
-      background: #000000f2;
+      background: #000000e5;
     }
     .main-title, .brand {
       color: #f8f9fa !important;
     }
     .mist .site-title i {
-      background: #f8f9faf2;
+      background: #f8f9fae5;
     }.bg-img img {
-        filter: blur(5px)
+        filter: blur(3px)
       }.box-shadow-wrapper {
       box-shadow: none !important;
     }body {

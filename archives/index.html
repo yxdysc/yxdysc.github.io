@@ -9,7 +9,7 @@
 <meta name="description" content="唔...莫文章填充的blog">
 <meta name="theme-color" content="#000">
 <title>随 缘</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1597891236920">
+<link rel="shortcut icon" href="/favicon.ico?v=1597892104891">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -204,19 +204,19 @@
     <div class="sidebar-item-box">
       <a href="/archives/">
         
-        <span class="site-item-stat-count">0</span>
+        <span class="site-item-stat-count">1</span>
         <span class="site-item-stat-name language" data-lan="article">文章</span>
       </a>
     </div>
     <div class="sidebar-item-box">
       <a href="">
-        <span class="site-item-stat-count">0</span>
+        <span class="site-item-stat-count">3</span>
         <span class="site-item-stat-name language" data-lan="category">分类</span>
       </a>
     </div>
     <div class="sidebar-item-box">
       <a href="/tags/">
-        <span class="site-item-stat-count">0</span>
+        <span class="site-item-stat-count">3</span>
         <span class="site-item-stat-name language" data-lan="tag">标签</span>
       </a>
     </div>
@@ -277,9 +277,27 @@
   <div class="archive-timeline-box">
     <div class="archive-timeline-title">
       
-        <h2 class="language" data-lan="archives" data-count="0">非常好！目前共计0篇日志，继续努力！</h2>
+        <h2 class="language" data-lan="archives" data-count="1">非常好！目前共计1篇日志，继续努力！</h2>
       
     </div>
+    
+      
+      
+        <div class="node-title">
+          <h2 class="tag-year">2020</h2>
+        </div>    
+        
+      
+      <a href="https://yxdysc.github.io/post/oi-luo-gu-p4189-xing-ji-lu-xing/">
+        <div class="motion-warpper tag-archive-node">
+          <div class="tag-node">
+            <h1>
+              08-20
+              <small>『AFO-OI题解』 洛谷P4189 [CTSC2010]星际旅行</small>
+            </h1>
+          </div>  
+      </div>
+      </a>
     
   </div>
   
@@ -287,6 +305,12 @@
   <ul class="pagination-ul">
     
     
+      
+        <li class="pagination-li pagination-active">
+            <a href="/archives/page/../">
+              1
+            </a>
+        </li>
       
     
     
@@ -1051,6 +1075,128 @@
       <hr>
     </div>
     <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://yxdysc.github.io/post/oi-luo-gu-p4189-xing-ji-lu-xing/"" data-c="
+          &lt;p&gt;&lt;img src=&#34;https://c-ssl.duitang.com/uploads/item/201805/29/20180529172911_WJRa3.thumb.700_0.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+##首先先亮出原题&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Description&lt;br&gt;
+公元3000年，地球联盟已经攻占了银河系内的N个星球，出于资金的考虑，政府仅仅在星球间建立了N-1条双向时空隧道保证任意两个星球之间互相可达。出于管理上的考虑，第i个星球的行政长官要求每个公民在一年内不得从该星球利用时空隧道次数超过Hi次（这一统计是基于离开次数统计的，如果你已经使用从该星球离开过Hi次，那么这一年内你就不能再使用时空隧道离开这个星球了）。Louis&lt;br&gt;
+Paosen是一个星际旅行家，他希望能使用尽量多次的时空隧道，但又不希望最终被迫定居的星球条件太过恶劣。所以他希望能知道对于每个星球i，若从0号星球出发，最终以i号星球为终点，这样的星际旅行途中最多可以使用多少次时空隧道。&lt;br&gt;
+Input&lt;br&gt;
+第一行包含一个整数N。接下来的一行包含N个整数Hi，分别表示每个星球的离开次数限制。接下来N-1行每行两个整数，表示这两个星球之间有时空隧道连接。星球的编号从0开始，Louis&lt;br&gt;
+Paosen一开始在0号星球。 Output 包含N行，每行一个整数，表示如果最终旅行结束在这个星球，最多可以使用时空隧道的次数。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;##题解部分&lt;br&gt;
+发现首先可以全走一遍回到起点，然后贪心地消掉还能走的边，这样就得到了回到原点的最大步数。&lt;br&gt;
+接下来考虑再走到每个点。dfs一遍，如果父节点还有剩余流量就直接走过来，否则需要退掉向父节点走的边，然后再检查一下多出来的流量能否和儿子走来回。注意需要回溯。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;##参考代码~~（&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;注&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;：&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;有&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;防&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;抄&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;袭&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;注：有防抄袭&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;注&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;：&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;有&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;防&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;抄&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;袭&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;）~~&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;algorithm&amp;gt;
+using namespace std;
+#define LL long long
+int rd()
+{
+    int x=0;
+    char c=getchar();
+    while (c&amp;lt;&#39;0&#39;||c&amp;gt;&#39;9&#39;) c=getchar();
+    while (c&amp;gt;=&#39;0&#39;&amp;amp;&amp;amp;c&amp;lt;=&#39;9&#39;)
+    {
+        x=x*10+c-&#39;0&#39;
+        c=getchar();
+    }
+    return x;
+}
+int fir[50010],ne[100010],to[100010],w[50010],du[50010],n;
+LL now,ans[50010];
+void add(int num,int u,int v)
+{
+    ne[num]=fir[u];
+    fir[u]=num;
+    to[num]=v;
+}
+void dfs1(int u,int fa)
+{
+    LL x;
+    int v;
+    for (int i=fir[u];i;i=ne[i])
+        if ((v=to[i])!=fa)
+        {
+            dfs1(v,u);
+            x=min(w[u],w[v]);
+            w[u]-=x;
+            w[v]-=x;
+            now+=2*x;
+        }
+}
+void dfs2(int u,int fa)
+{
+    int v,flag;
+    if (fa!=-1&amp;amp;&amp;amp;w[fa])
+    {
+        flag=1;
+        w[fa]--;
+        now++;
+    }
+    else
+    {
+        flag=0;
+        now--;
+        w[u]++;
+        if (w[u]==1)
+            for (int i=fir[u];i;i=ne[i])
+                if ((v=to[i])!=fa&amp;amp;&amp;amp;w[v])
+                {
+                    w[u]--;
+                    w[v]--;
+                    now+=2;
+                    flag=-1;
+                    break;
+                }
+    }
+    ans[u]=now;
+    for (int i=fir[u];i;i=ne[i])
+        if ((v=to[i])!=fa)
+            dfs2(v,u);
+    if (flag==1)
+    {
+        w[fa]++;
+        now--;
+    }
+    else
+    {
+        now++;
+        if (flag==-1) now-=2;
+    }
+}
+int main()
+{
+    int u,v;
+    n=rd();
+    for (int i=1;i&amp;lt;=n;i++) w[i]=rd();
+    for (int i=1;i&amp;lt;n;i++)
+    {
+        u=rd()+1;
+        v=rd()+1;
+        du[u]++;
+        du[v]++;
+        add(i&amp;lt;&amp;lt;1,u,v)
+        add(i&amp;lt;&amp;lt;1|1,v,u)
+    }
+    for (int i=1;i&amp;lt;=n;i++) w[i]-=du[i];
+    now=2*(n-1);
+    dfs1(1,-1);
+    ans[1]=now;
+    for (int i=fir[1];i;i=ne[i]) dfs2(to[i],1);
+    for (int i=1;i&amp;lt;=n;i++) printf(&amp;quot;%lld\n&amp;quot;,ans[i]);
+}  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;##完结撒花~~（逃~~&lt;/p&gt;
+">『AFO-OI题解』 洛谷P4189 [CTSC2010]星际旅行</a>
+      </div>
       
       <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://yxdysc.github.io/post/rudaozhinan/"" data-c="

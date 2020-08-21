@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yxdysc.github.io</id>
     <title>随 缘</title>
-    <updated>2020-08-21T05:57:00.096Z</updated>
+    <updated>2020-08-21T07:46:46.044Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yxdysc.github.io"/>
     <link rel="self" href="https://yxdysc.github.io/atom.xml"/>
@@ -11,11 +11,11 @@
     <icon>https://yxdysc.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 随 缘</rights>
     <entry>
-        <title type="html"><![CDATA[近期的咕咕咕计划]]></title>
-        <id>https://yxdysc.github.io/post/jin-qi-ji-hua/</id>
-        <link href="https://yxdysc.github.io/post/jin-qi-ji-hua/">
+        <title type="html"><![CDATA[『学习笔记』在w3school自学HTML]]></title>
+        <id>https://yxdysc.github.io/post/html-bi-ji/</id>
+        <link href="https://yxdysc.github.io/post/html-bi-ji/">
         </link>
-        <updated>2020-08-20T14:47:42.000Z</updated>
+        <updated>2020-08-21T07:35:50.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[『文化杂谈』七夕节详解]]></title>

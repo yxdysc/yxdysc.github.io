@@ -2136,11 +2136,11 @@ p > code {
       transition-duration: 59s;
       transition-timing-function: cubic-bezier(.34,0,.84,1);
     }.markdownIt-TOC a {
-      color: #eee;
-      border-bottom-color: #eee;
+      color: #cc5de8;
+      border-bottom-color: #cc5de8;
     }.markdownIt-TOC a:hover {
-      color: #fff;
-      border-bottom-color: #fff;
+      color: #f8f9fa;
+      border-bottom-color: #f8f9fa;
     }.active-current > a {
       color: #fc6423 !important;
       border-bottom-color: #fc6423 !important;

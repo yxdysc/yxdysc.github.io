@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yxdysc.github.io</id>
     <title>随 缘</title>
-    <updated>2020-08-22T06:45:51.070Z</updated>
+    <updated>2020-08-22T06:47:13.604Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yxdysc.github.io"/>
     <link rel="self" href="https://yxdysc.github.io/atom.xml"/>
@@ -19,8 +19,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[『文化杂谈』七夕节详解]]></title>
-        <id>https://yxdysc.github.io/post/wen-hua-za-tan-qi-xi-jie-xiang-jie/</id>
-        <link href="https://yxdysc.github.io/post/wen-hua-za-tan-qi-xi-jie-xiang-jie/">
+        <id>https://yxdysc.github.io/post/za-tan-qi-xi/</id>
+        <link href="https://yxdysc.github.io/post/za-tan-qi-xi/">
         </link>
         <updated>2020-08-20T07:57:53.000Z</updated>
     </entry>

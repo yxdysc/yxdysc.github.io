@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yxdysc.github.io</id>
     <title>随 缘</title>
-    <updated>2020-08-22T14:46:57.451Z</updated>
+    <updated>2020-08-22T14:57:27.193Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yxdysc.github.io"/>
     <link rel="self" href="https://yxdysc.github.io/atom.xml"/>
@@ -10,13 +10,6 @@
     <logo>https://yxdysc.github.io/images/avatar.png</logo>
     <icon>https://yxdysc.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 随 缘</rights>
-    <entry>
-        <title type="html"><![CDATA[说说&留言❤]]></title>
-        <id>https://yxdysc.github.io/post/shuo-shuo-andliu-yan/</id>
-        <link href="https://yxdysc.github.io/post/shuo-shuo-andliu-yan/">
-        </link>
-        <updated>2020-08-22T14:29:54.000Z</updated>
-    </entry>
     <entry>
         <title type="html"><![CDATA[『学习笔记』在w3school自学HTML]]></title>
         <id>https://yxdysc.github.io/post/html-bi-ji/</id>

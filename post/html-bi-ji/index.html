@@ -9,7 +9,7 @@
 <meta name="description" content="唔...莫文章填充的blog">
 <meta name="theme-color" content="#000">
 <title>『学习笔记』在w3school自学HTML | 随 缘</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1598189207331">
+<link rel="shortcut icon" href="/favicon.ico?v=1598251068619">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -375,7 +375,24 @@
 <li><a href="#html-%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F-%E6%9C%89%E7%94%A8%E7%9A%84%E6%8F%90%E7%A4%BA">HTML 输出格式 - 有用的提示</a></li>
 </ul>
 </li>
-<li><a href="#html%E6%A0%B7%E5%BC%8F">HTML样式</a></li>
+<li><a href="#html%E6%A0%B7%E5%BC%8F">HTML样式</a>
+<ul>
+<li><a href="#%E4%B8%8D%E5%BB%BA%E8%AE%AE%E4%BD%BF%E7%94%A8%E9%83%A8%E5%88%86%E5%B0%86%E8%A2%AB%E5%BA%9F%E5%BC%83%E7%9A%84%E6%A0%87%E7%AD%BE%E5%92%8C%E5%B1%9E%E6%80%A7%E8%BF%9B%E8%A1%8C%E6%A0%B7%E5%BC%8F%E7%9A%84%E7%BC%96%E8%BE%91%E6%A0%B7%E5%BC%8F%E5%B0%BD%E9%87%8F%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8css%E5%AE%9A%E4%B9%89">不建议使用部分将被废弃的标签和属性进行样式的编辑，样式尽量可以使用css定义</a></li>
+<li><a href="#style-%E5%B1%9E%E6%80%A7%E9%83%A8%E5%88%86%E5%AE%9E%E4%BE%8B%E5%8F%AF%E7%94%A8"><code>style</code> 属性部分实例（可用）</a>
+<ul>
+<li><a href="#%E8%83%8C%E6%99%AF%E9%A2%9C%E8%89%B2">背景颜色</a></li>
+<li><a href="#%E6%96%87%E6%9C%AC%E5%AF%B9%E9%BD%90">文本对齐</a></li>
+</ul>
+</li>
+<li><a href="#%E6%80%BB%E7%BB%93">总结：</a>
+<ul>
+<li><a href="#%E8%83%8C%E6%99%AF%E9%A2%9C%E8%89%B2%E5%85%A8%E5%B1%80">背景颜色(全局)</a></li>
+<li><a href="#%E5%AD%97%E4%BD%93-%E9%A2%9C%E8%89%B2%E5%92%8C%E5%B0%BA%E5%AF%B8">字体、颜色和尺寸</a></li>
+<li><a href="#%E6%96%87%E6%9C%AC%E5%AF%B9%E9%BD%90%E5%B1%85%E4%B8%AD">文本对齐(居中)</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
   </div>
@@ -681,12 +698,12 @@
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>11<span class="language" data-lan="minute">分钟</span></span>
+      <span>13<span class="language" data-lan="minute">分钟</span></span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>2560<span class="pc-show language" data-lan="words">字数</span></span>
+      <span>2915<span class="pc-show language" data-lan="words">字数</span></span>
     </span>
     
     
@@ -1012,6 +1029,55 @@ This text is in Times and green</p>
 </body>
 </html>
 ##（此处背景色无法修改，往后由于资料量增大，会少量出示实例，可以自行前往 教学中查看）教学链接见文章顶端。
+<h2 id="不建议使用部分将被废弃的标签和属性进行样式的编辑样式尽量可以使用css定义">不建议使用部分将被废弃的标签和属性进行样式的编辑，样式尽量可以使用css定义</h2>
+<h2 id="style-属性部分实例可用"><code>style</code> 属性部分实例（可用）</h2>
+<h3 id="背景颜色">背景颜色</h3>
+<p><code>background-color</code> 属性为元素定义了背景颜色</p>
+<pre><code>&lt;body style=&quot;background-color:yellow&quot;&gt;
+&lt;h2 style=&quot;background-color:red&quot;&gt;This is a heading&lt;/h2&gt;
+&lt;p style=&quot;background-color:green&quot;&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;
+</code></pre>
+<body style="background-color:yellow">
+<h2 style="background-color:red">This is a heading</h2>
+<p style="background-color:green">This is a paragraph.</p>
+</body>
+### HTML 字体、颜色和尺寸
+`font-family`、`color` 以及 `font-size` 属性分别定义元素中文本的字体系列、颜色和字体尺寸
+<pre><code>&lt;body&gt;
+&lt;p style=&quot;font-family:verdana&quot;&gt;A heading&lt;/p&gt;
+&lt;p style=&quot;font-family:arial;color:red;font-size:20px;&quot;&gt;A paragraph.&lt;/p&gt;
+&lt;/body&gt;
+</code></pre>
+<body>
+<p style="font-family:verdana">A heading</p>
+<p style="font-family:arial;color:red;font-size:20px;">A paragraph.</p>
+</body>
+关于字体，个人觉得微软雅黑的兼容性比较高且好看，默认为宋体。
+微软雅黑font-family:Micsoft YaHei
+<h3 id="文本对齐">文本对齐</h3>
+<p><code>text-align</code> 属性规定了元素中文本的水平对齐方式</p>
+<pre><code>&lt;body&gt;
+&lt;p style=&quot;text-align:center&quot;&gt;This is a heading&lt;/p&gt;
+&lt;p&gt;The heading above is aligned to the center of this page.&lt;/p&gt;
+&lt;/body&gt;
+</code></pre>
+<body>
+<p style="text-align:center">This is a heading</p>
+<p>The heading above is aligned to the center of this page.</p>
+</body>
+----
+<h2 id="总结">总结：</h2>
+<h3 id="背景颜色全局">背景颜色(全局)</h3>
+<pre><code>&lt;body style=&quot;background-color:XXX&quot;&gt;
+</code></pre>
+<h3 id="字体-颜色和尺寸">字体、颜色和尺寸</h3>
+<pre><code>style=&quot;font-family:Micsoft YaHei;color:red;font-size:20px;&quot;
+</code></pre>
+<h3 id="文本对齐居中">文本对齐(居中)</h3>
+<pre><code>style=&quot;text-align:center&quot;
+</code></pre>
+<hr>
 <!--更新至此-->
             </div>
             
@@ -2458,6 +2524,55 @@ This text is in Times and green&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 ##（此处背景色无法修改，往后由于资料量增大，会少量出示实例，可以自行前往 教学中查看）教学链接见文章顶端。
+&lt;h2 id=&#34;不建议使用部分将被废弃的标签和属性进行样式的编辑样式尽量可以使用css定义&#34;&gt;不建议使用部分将被废弃的标签和属性进行样式的编辑，样式尽量可以使用css定义&lt;/h2&gt;
+&lt;h2 id=&#34;style-属性部分实例可用&#34;&gt;&lt;code&gt;style&lt;/code&gt; 属性部分实例（可用）&lt;/h2&gt;
+&lt;h3 id=&#34;背景颜色&#34;&gt;背景颜色&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;background-color&lt;/code&gt; 属性为元素定义了背景颜色&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;body style=&amp;quot;background-color:yellow&amp;quot;&amp;gt;
+&amp;lt;h2 style=&amp;quot;background-color:red&amp;quot;&amp;gt;This is a heading&amp;lt;/h2&amp;gt;
+&amp;lt;p style=&amp;quot;background-color:green&amp;quot;&amp;gt;This is a paragraph.&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;body style=&#34;background-color:yellow&#34;&gt;
+&lt;h2 style=&#34;background-color:red&#34;&gt;This is a heading&lt;/h2&gt;
+&lt;p style=&#34;background-color:green&#34;&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;
+### HTML 字体、颜色和尺寸
+`font-family`、`color` 以及 `font-size` 属性分别定义元素中文本的字体系列、颜色和字体尺寸
+&lt;pre&gt;&lt;code&gt;&amp;lt;body&amp;gt;
+&amp;lt;p style=&amp;quot;font-family:verdana&amp;quot;&amp;gt;A heading&amp;lt;/p&amp;gt;
+&amp;lt;p style=&amp;quot;font-family:arial;color:red;font-size:20px;&amp;quot;&amp;gt;A paragraph.&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;body&gt;
+&lt;p style=&#34;font-family:verdana&#34;&gt;A heading&lt;/p&gt;
+&lt;p style=&#34;font-family:arial;color:red;font-size:20px;&#34;&gt;A paragraph.&lt;/p&gt;
+&lt;/body&gt;
+关于字体，个人觉得微软雅黑的兼容性比较高且好看，默认为宋体。
+微软雅黑font-family:Micsoft YaHei
+&lt;h3 id=&#34;文本对齐&#34;&gt;文本对齐&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;text-align&lt;/code&gt; 属性规定了元素中文本的水平对齐方式&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;body&amp;gt;
+&amp;lt;p style=&amp;quot;text-align:center&amp;quot;&amp;gt;This is a heading&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;The heading above is aligned to the center of this page.&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;body&gt;
+&lt;p style=&#34;text-align:center&#34;&gt;This is a heading&lt;/p&gt;
+&lt;p&gt;The heading above is aligned to the center of this page.&lt;/p&gt;
+&lt;/body&gt;
+----
+&lt;h2 id=&#34;总结&#34;&gt;总结：&lt;/h2&gt;
+&lt;h3 id=&#34;背景颜色全局&#34;&gt;背景颜色(全局)&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;body style=&amp;quot;background-color:XXX&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;字体-颜色和尺寸&#34;&gt;字体、颜色和尺寸&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;style=&amp;quot;font-family:Micsoft YaHei;color:red;font-size:20px;&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;文本对齐居中&#34;&gt;文本对齐(居中)&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;style=&amp;quot;text-align:center&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
 &lt;!--更新至此--&gt;">『学习笔记』在w3school自学HTML</a>
       </div>
       
